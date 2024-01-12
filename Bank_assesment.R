@@ -89,7 +89,7 @@ str(test3)
 logit_test <- C5.0(purchase ~ .,test3)
 summary(logit_test)
 plot(logit_test)
-write.csv(test3,"D://UCC STUFF//IS6052//Assignment//Market_pred_result_logistic.csv") 
+write.csv(test3,"Market_pred_result_logistic.csv") 
 
 ############################################### Decision Tree CART ################################################################### 
 set.seed(1234)
@@ -134,7 +134,7 @@ reg2_tst <- C5.0(purchase ~ .,test1)
 summary(reg2_tst)
 plot(reg2_tst)
 
-write.csv(test1,"D://UCC STUFF//IS6052//Assignment//Market_pred_result1.csv")
+write.csv(test1,"Market_pred_result_CART.csv")
 
 
 ######################################## Decision Tree C5.0 ####################################################################
@@ -177,7 +177,7 @@ reg3_tst <- C5.0(purchase ~ .,test2)
 summary(reg3_tst)
 plot(reg3_tst)
 
-write.csv(test2,"D://UCC STUFF//IS6052//Assignment//Market_pred_result2.csv")
+write.csv(test2,"Market_pred_result_C50.csv")
 
 ############################################### SVM ############################################################################
 set.seed(1234)
@@ -209,7 +209,7 @@ reg4_tst <- C5.0(purchase ~ .,test3)
 summary(reg4_tst)
 plot(reg4_tst)
 
-write.csv(test3,"D://UCC STUFF//IS6052//Assignment//Market_pred_result_svm.csv")
+write.csv(test3,"Market_pred_result_svm.csv")
 
 ############################################naivebayes##########################################################################
 set.seed(1234)
@@ -241,7 +241,7 @@ reg5_tst <- C5.0(purchase ~ .,test4)
 summary(reg5_tst)
 plot(reg5_tst)
 
-write.csv(test3,"D://UCC STUFF//IS6052//Assignment//Market_pred_result_nb.csv")
+write.csv(test3,"Market_pred_result_nb.csv")
 
 ############################################### Decision Tree ID3 ################################################################### 
 set.seed(1234)
@@ -269,4 +269,4 @@ reg2_tstx <- C5.0(purchase ~ .,test1x)
 summary(reg2_tstx)
 plot(reg2_tstx)
 
-write.csv(test1x,"D://UCC STUFF//IS6052//Assignment//Market_pred_result_ID3.csv")
+write.csv(test1x,"Market_pred_result_ID3.csv")
